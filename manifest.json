@@ -13,28 +13,7 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "*://*/*.md*"      , "*://*/*.md",
-        "*://*/*.mdown*"   , "*://*/*.mdown",
-        "*://*/*.markdown*", "*://*/*.markdown",
-        "*://*/*.markdn*"  , "*://*/*.markdn",
-        "*://*/*.mdtext*"  , "*://*/*.mdtext",
-        "*://*/*.mdtxt*"   , "*://*/*.mdtxt",
-        "*://*/*.mdwn*"    , "*://*/*.mdwn",
-        "*://*/*.mkd*"     , "*://*/*.mkd",
-        "*://*/*.mkdn*"    , "*://*/*.mkdn",
-        "*://*/*.text*"    , "*://*/*.text",
-        "file:///*.md*"      , "file:///*.md",
-        "file:///*.mdown*"   , "file:///*.mdown",
-        "file:///*.markdown*", "file:///*.markdown",
-        "file:///*.markdn*"  , "file:///*.markdn",
-        "file:///*.mdtext*"  , "file:///*.mdtext",
-        "file:///*.mdtxt*"   , "file:///*.mdtxt",
-        "file:///*.mdwn*"    , "file:///*.mdwn",
-        "file:///*.mkd*"     , "file:///*.mkd",
-        "file:///*.mkdn*"    , "file:///*.mkdn",
-        "file:///*.text*"    , "file:///*.text"
-      ],
+      "matches": ["<all_urls>"],
       "js": ["showdown.js", "markdownify.js"]
     }
   ],

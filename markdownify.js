@@ -1,4 +1,10 @@
 (function(document) {
+	var is_markdown = document.contentType == 'text/markdown'
+		|| (document.contentType == 'text/plain' && document.location.pathname.substr(-3) == '.md');
+
+	if (!is_markdown) {
+		return;
+	}
 
   // Onload, take the DOM of the page, get the markdown formatted text out and
 	// apply the converter.
